@@ -14,272 +14,281 @@
 
 </head>
 <body>
+    <div class="page flex flex-row">
+        <div class="sidebar  w-64 px-3 py-4 overflow-y-auto rounded bg-gray-50 dark:bg-gray-800">
+            <div class="sidebar ">
 
-
-    <header class="header">
-        <div class="top">
-            <div class="search"><span class="material-icons-outlined search-icon">
-                search
-              </span></label
-            >
-            <input type="text" name="search" id="search" /></div>
-            <div class="account">
-                <button>
-                  <span class="material-icons-outlined"> notifications_active </span>
-                </button>
-                <div class="picture"></div>
-                <p class="name">Morgan Oakley</p>
+                <h1 class="sidebar-title self-center text-lg font-semibold whitespace-nowrap dark:text-white">
+                  <span class="material-icons"> dashboard </span>
+                  Dashboard
+                </h1>
+                <ul class="nav">
+                  <li class="nav-item current">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons"> home </span> Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> account_circle </span>
+                      Profile</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> message </span> Messages</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> history </span> History</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> task </span> Tasks</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> groups </span>
+                      Communities</a
+                    >
+                  </li>
+                </ul>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> settings </span> Settings</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> help_center </span>
+                      Support</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> verified_user </span>
+                      Privacy</a
+                    >
+                  </li>
+                </ul>
               </div>
+
         </div>
 
+        <div class="main-page w-4/5">
+            <header class="header flex flex-col w-full bg-sky-300">
+                <div class="top flex flex-row justify-between px-10 py-5">
+                    <div class="search"><span class="material-icons-outlined search-icon">
+                        search
+                      </span></label
+                    >
+                    <input type="text" name="search" id="search" class="rounded-full w-2/3"/></div>
+                    <div class="account flex flex-row bg-white justify-between space-x-8">
+                        <button>
+                          <span class="material-icons-outlined"> notifications_active </span>
+                        </button>
+                        <div class="picture"></div>
+                        <p class="name">Morgan Oakley</p>
+                      </div>
+                </div>
+        
+        
+        
+                <div class="bottom flex flex-row justify-between px-10 py-5">
+                    <div class="profile">
+                      <div class="picture"></div>
+                      <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name">
+                          Morgan Oakley <span class="username">(@morgan)</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">New</button>
+                      <button class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Upload</button>
+                      <button class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Share</button>
+                    </div>
+                  </div>
+            </header>
 
 
-        <div class="bottom">
-            <div class="profile">
-              <div class="picture"></div>
-              <div class="profile-name">
-                <p class="greeting">Hi there,</p>
-                <p class="name">
-                  Morgan Oakley <span class="username">(@morgan)</span>
-                </p>
-              </div>
+            <div class="main-content">
+                <div class="content">
+                    <h3>Your Projects</h3>
+                    <div class="board">
+                        <div class="card">
+        
+                            <h5 class="card-title">Super Cool Project</h5>
+                            <p class="card-text">
+                              Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                              nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                              voluptatem? Asperiores, sed praesentium!
+                            </p>
+                          <div class="actions">
+                           <span class="material-icons-outlined"> star_border </span>
+                           <span class="material-icons-outlined"> visibility </span>
+                           <span class="material-icons-outlined"> open_in_new </span>
+                           </div>
+                        </div>
+        
+        
+                        <div class="card">
+        
+                            <h5 class="card-title">Super Cool Project</h5>
+                            <p class="card-text">
+                              Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                              nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                              voluptatem? Asperiores, sed praesentium!
+                            </p>
+                          <div class="actions">
+                           <span class="material-icons-outlined"> star_border </span>
+                           <span class="material-icons-outlined"> visibility </span>
+                           <span class="material-icons-outlined"> open_in_new </span>
+                           </div>
+                        </div>
+        
+        
+                        <div class="card">
+        
+                            <h5 class="card-title">Super Cool Project</h5>
+                            <p class="card-text">
+                              Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                              nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                              voluptatem? Asperiores, sed praesentium!
+                            </p>
+                          <div class="actions">
+                           <span class="material-icons-outlined"> star_border </span>
+                           <span class="material-icons-outlined"> visibility </span>
+                           <span class="material-icons-outlined"> open_in_new </span>
+                           </div>
+                        </div>
+        
+        
+                        <div class="card">
+        
+                            <h5 class="card-title">Super Cool Project</h5>
+                            <p class="card-text">
+                              Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                              nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                              voluptatem? Asperiores, sed praesentium!
+                            </p>
+                          <div class="actions">
+                           <span class="material-icons-outlined"> star_border </span>
+                           <span class="material-icons-outlined"> visibility </span>
+                           <span class="material-icons-outlined"> open_in_new </span>
+                           </div>
+                        </div>
+        
+                        <div class="card">
+        
+                            <h5 class="card-title">Super Cool Project</h5>
+                            <p class="card-text">
+                              Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                              nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                              voluptatem? Asperiores, sed praesentium!
+                            </p>
+                          <div class="actions">
+                           <span class="material-icons-outlined"> star_border </span>
+                           <span class="material-icons-outlined"> visibility </span>
+                           <span class="material-icons-outlined"> open_in_new </span>
+                           </div>
+                        </div>
+        
+                        <div class="card">
+        
+                            <h5 class="card-title">Super Cool Project</h5>
+                            <p class="card-text">
+                              Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                              nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                              voluptatem? Asperiores, sed praesentium!
+                            </p>
+                          <div class="actions">
+                           <span class="material-icons-outlined"> star_border </span>
+                           <span class="material-icons-outlined"> visibility </span>
+                           <span class="material-icons-outlined"> open_in_new </span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="announcements">
+                    <h3>announcements</h3>
+        
+                    <ul class="list">
+                        <li>
+        
+                           <h5>Site Maintanence</h5>
+                           <p class="an-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat possimus alias odit nihil adipisci distinctio. Deserunt, ducimus recusandae tempora consectetur placeat modi, quam provident harum, dolore facere adipisci eligendi.
+                            </p>
+                        </li>
+        
+                        <li>
+        
+                            <h5>Site Maintanence</h5>
+                            <p class="an-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat possimus alias odit nihil adipisci distinctio. Deserunt, ducimus recusandae tempora consectetur placeat modi, quam provident harum, dolore facere adipisci eligendi.
+                            </p>
+                        </li>
+        
+                        <li>
+        
+                            <h5>Site Maintanence</h5>
+                            <p class="an-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat possimus alias odit nihil adipisci distinctio. Deserunt, ducimus recusandae tempora consectetur placeat modi, quam provident harum, dolore facere adipisci eligendi.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+        
+        
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <ul class="card">
+                        <li class="trend trend-1">
+                          <div class="picture"></div>
+                          <div class="account">
+                            <p class="username">@tegan</p>
+                            <p class="name card-text">World Peace Builder</p>
+                          </div>
+                        </li>
+                        <li class="trend trend-2">
+                          <div class="picture"></div>
+                          <div class="account">
+                            <p class="username">@morgan</p>
+                            <p class="name card-text">Super Cool Project</p>
+                          </div>
+                        </li>
+                        <li class="trend trend-3">
+                          <div class="picture"></div>
+                          <div class="account">
+                            <p class="username">@kendall</p>
+                            <p class="name card-text">Life Changing App</p>
+                          </div>
+                        </li>
+                        <li class="trend trend-4">
+                          <div class="picture"></div>
+                          <div class="account">
+                            <p class="username">@alex</p>
+                            <p class="name card-text">No Traffic Maker</p>
+                          </div>
+                        </li>
+                      </ul>
+                </div>
             </div>
-            <div class="buttons">
-              <button class="btn">New</button>
-              <button class="btn">Upload</button>
-              <button class="btn">Share</button>
-            </div>
-          </div>
-    </header>
 
-
-    <div class="sidebar">
-
-      <h1 class="sidebar-title">
-        <span class="material-icons"> dashboard </span>
-        Dashboard
-      </h1>
-      <ul class="nav">
-        <li class="nav-item current">
-          <a href="#" class="nav-link"
-            ><span class="material-icons"> home </span> Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> account_circle </span>
-            Profile</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> message </span> Messages</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> history </span> History</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> task </span> Tasks</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> groups </span>
-            Communities</a
-          >
-        </li>
-      </ul>
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> settings </span> Settings</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> help_center </span>
-            Support</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"
-            ><span class="material-icons-outlined"> verified_user </span>
-            Privacy</a
-          >
-        </li>
-      </ul>
+        </div>
     </div>
 
 
-    <div class="main-content">
-        <div class="content">
-            <h3>Your Projects</h3>
-            <div class="board">
-                <div class="card">
 
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">
-                      Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
-                      nemo aperiam. Reprehenderit porro eos dignissimos beatae et
-                      voluptatem? Asperiores, sed praesentium!
-                    </p>
-                  <div class="actions">
-                   <span class="material-icons-outlined"> star_border </span>
-                   <span class="material-icons-outlined"> visibility </span>
-                   <span class="material-icons-outlined"> open_in_new </span>
-                   </div>
-                </div>
-
-
-                <div class="card">
-
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">
-                      Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
-                      nemo aperiam. Reprehenderit porro eos dignissimos beatae et
-                      voluptatem? Asperiores, sed praesentium!
-                    </p>
-                  <div class="actions">
-                   <span class="material-icons-outlined"> star_border </span>
-                   <span class="material-icons-outlined"> visibility </span>
-                   <span class="material-icons-outlined"> open_in_new </span>
-                   </div>
-                </div>
-
-
-                <div class="card">
-
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">
-                      Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
-                      nemo aperiam. Reprehenderit porro eos dignissimos beatae et
-                      voluptatem? Asperiores, sed praesentium!
-                    </p>
-                  <div class="actions">
-                   <span class="material-icons-outlined"> star_border </span>
-                   <span class="material-icons-outlined"> visibility </span>
-                   <span class="material-icons-outlined"> open_in_new </span>
-                   </div>
-                </div>
-
-
-                <div class="card">
-
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">
-                      Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
-                      nemo aperiam. Reprehenderit porro eos dignissimos beatae et
-                      voluptatem? Asperiores, sed praesentium!
-                    </p>
-                  <div class="actions">
-                   <span class="material-icons-outlined"> star_border </span>
-                   <span class="material-icons-outlined"> visibility </span>
-                   <span class="material-icons-outlined"> open_in_new </span>
-                   </div>
-                </div>
-
-                <div class="card">
-
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">
-                      Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
-                      nemo aperiam. Reprehenderit porro eos dignissimos beatae et
-                      voluptatem? Asperiores, sed praesentium!
-                    </p>
-                  <div class="actions">
-                   <span class="material-icons-outlined"> star_border </span>
-                   <span class="material-icons-outlined"> visibility </span>
-                   <span class="material-icons-outlined"> open_in_new </span>
-                   </div>
-                </div>
-
-                <div class="card">
-
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">
-                      Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
-                      nemo aperiam. Reprehenderit porro eos dignissimos beatae et
-                      voluptatem? Asperiores, sed praesentium!
-                    </p>
-                  <div class="actions">
-                   <span class="material-icons-outlined"> star_border </span>
-                   <span class="material-icons-outlined"> visibility </span>
-                   <span class="material-icons-outlined"> open_in_new </span>
-                   </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="announcements">
-            <h3>announcements</h3>
-
-            <ul class="list">
-                <li>
-
-                   <h5>Site Maintanence</h5>
-                   <p class="an-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat possimus alias odit nihil adipisci distinctio. Deserunt, ducimus recusandae tempora consectetur placeat modi, quam provident harum, dolore facere adipisci eligendi.
-                    </p>
-                </li>
-
-                <li>
-
-                    <h5>Site Maintanence</h5>
-                    <p class="an-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat possimus alias odit nihil adipisci distinctio. Deserunt, ducimus recusandae tempora consectetur placeat modi, quam provident harum, dolore facere adipisci eligendi.
-                    </p>
-                </li>
-
-                <li>
-
-                    <h5>Site Maintanence</h5>
-                    <p class="an-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat possimus alias odit nihil adipisci distinctio. Deserunt, ducimus recusandae tempora consectetur placeat modi, quam provident harum, dolore facere adipisci eligendi.
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-
-        <div class="trending">
-            <h3>Trending</h3>
-            <ul class="card">
-                <li class="trend trend-1">
-                  <div class="picture"></div>
-                  <div class="account">
-                    <p class="username">@tegan</p>
-                    <p class="name card-text">World Peace Builder</p>
-                  </div>
-                </li>
-                <li class="trend trend-2">
-                  <div class="picture"></div>
-                  <div class="account">
-                    <p class="username">@morgan</p>
-                    <p class="name card-text">Super Cool Project</p>
-                  </div>
-                </li>
-                <li class="trend trend-3">
-                  <div class="picture"></div>
-                  <div class="account">
-                    <p class="username">@kendall</p>
-                    <p class="name card-text">Life Changing App</p>
-                  </div>
-                </li>
-                <li class="trend trend-4">
-                  <div class="picture"></div>
-                  <div class="account">
-                    <p class="username">@alex</p>
-                    <p class="name card-text">No Traffic Maker</p>
-                  </div>
-                </li>
-              </ul>
-        </div>
-    </div>
+    
     
 </body>
 </html>
