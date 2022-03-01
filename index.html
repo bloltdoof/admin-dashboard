@@ -1,14 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"/>
 
+     
 </head>
 <body>
-  
+
+    <div class="main grid overflow-hidden auto-cols-auto auto-rows-auto w-full">
+        <div class="box row-start-1 row-end-5 col-start-1 col-end-2 bg-sky-400 min-w-full ">
+            <aside class="sidebar">
+                <h1 class="sidebar-title p-8 text-3xl font-bold text-white">
+                  <span class="material-icons"> dashboard </span>
+                  Dashboard
+                </h1>
+                <ul class="nav">
+                  <li class="nav-item current px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons"> home </span> Home</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> account_circle </span>
+                      Profile</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> message </span> Messages</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> history </span> History</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> task </span> Tasks</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> groups </span>
+                      Communities</a
+                    >
+                  </li>
+                </ul>
+                <ul class="nav py-6">
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> settings </span> Settings</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> help_center </span>
+                      Support</a
+                    >
+                  </li>
+                  <li class="nav-item px-8 py-3 text-white text-xl font-bold">
+                    <a href="#" class="nav-link"
+                      ><span class="material-icons-outlined"> verified_user </span>
+                      Privacy</a
+                    >
+                  </li>
+                </ul>
+          
+              </aside>
+        </div>
+        <div class="box row-start-1 row-end-2 col-start-2 col-end-5 bg-white min-w-full min-h-full">
+            <div class="header flex flex-col">
+                <div class="top flex flex-row bg-white h-24 py-8 px-12 justify-between">
+                  <div class="flex justify-center">
+                    <div class="mb-3 xl:w-96">
+                      <div class="input-group relative flex flex-row-reverse items-stretch w-full mb-4 rounded">
+                        <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                        <span class="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded" id="basic-addon2">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account flex flex-row w-48 justify-between">
+                    <button>
+                      <span class="material-icons-outlined"> notifications_active </span>
+                    </button>
+                    <div class="picture"></div>
+                    <p class="name text-xl font-bold text-black">Morgan Oakley</p>
+                  </div>
+                </div>
+          
+                <div class="bottom flex flex-row bg-white h-24 py-8 px-12 justify-between">
+                  <div class="profile">
+                    <div class="picture"></div>
+                    <div class="profile-name">
+                      <p class="greeting text-md font-bold text-black">Hi there,</p>
+                      <p class="name text-xl font-bold text-black">
+                        Morgan Oakley <span class="username">(@morgan)</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="buttons flex flex-row justify-center">
+                    <div class="space-x-6">
+                      <button class="btn inline-block px-8 py-2.5 bg-sky-400 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-sky-700 hover:shadow-lg focus:bg-sky-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">New</button>
+                      <button class="btn inline-block px-6 py-2.5 bg-sky-400 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-sky-700 hover:shadow-lg focus:bg-sky-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Upload</button>
+                      <button class="btn inline-block px-8 py-2.5 bg-sky-400 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-sky-700 hover:shadow-lg focus:bg-sky-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Share</button>
+        
+                    </div>
+                    
+                  </div>
+                </div>
+        
+              </div>
+        </div>
+        <div class="box row-start-2 row-end-5 col-start-2 col-end-5 bg-gray-300 min-w-full h-fit">
+            <div class="content grid overflow-hidden auto-cols-auto grid-rows-2 bg-gray-200">
+                <div class="projects row-span-2 col-star-1 col-end-7">
+                  
+                  <h3 class="text-black text-xl font-bold p-4">Your Projects</h3>
+                  <div class="cards grid overflow-hidden grid-cols-2 auto-rows-auto gap-5">
+                    <div class="card flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                      <h5 class="card-title text-gray-900 text-xl leading-tight font-medium mb-2">Super Cool Project</h5>
+                      <p class="card-text text-gray-700 text-base mb-4">
+                        Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis
+                        nemo aperiam. Reprehenderit porro eos dignissimos beatae et
+                        voluptatem? Asperiores, sed praesentium!
+                      </p>
+                      <div class="actions flex flex-row justify-end space-x-6">
+                        <span class="material-icons-outlined"> star_border </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> open_in_new </span>
+                      </div>
+                    </div>
+                    <div class="card flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                      <h5 class="card-title text-gray-900 text-xl leading-tight font-medium mb-2">Less Cool Project</h5>
+                      <p class="card-text text-gray-700 text-base mb-4">
+                        Risus commodo viverra maecenas accumsan lacus vel. Nunc eget lorem
+                        dolor sed viverra ipsum nunc aliquet bibendum. Nec sagittis
+                        aliquam malesuada bibendum arcu vitae elementum.
+                      </p>
+                      <div class="actions flex flex-row justify-end space-x-6">
+                        <span class="material-icons-outlined"> star_border </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> open_in_new </span>
+                      </div>
+                    </div>
+                    <div class="card flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                      <h5 class="card-title text-gray-900 text-xl leading-tight font-medium mb-2">Impossible App</h5>
+                      <p class="card-text text-gray-700 text-base mb-4">
+                        Amet purus gravida quis blandit turpis cursus. Enim facilisis
+                        gravida neque convallis a cras semper. Dapibus ultrices in iaculis
+                        nunc sed augue.
+                      </p>
+                      <div class="actions flex flex-row justify-end space-x-6">
+                        <span class="material-icons-outlined"> star_border </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> open_in_new </span>
+                      </div>
+                    </div>
+          
+                    <div class="card flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                      <h5 class="card-title text-gray-900 text-xl leading-tight font-medium mb-2">Easy Peasy App</h5>
+                      <p class="card-text text-gray-700 text-base mb-4">
+                        Turpis egestas integer eget aliquet nibh praesent tristique magna.
+                        Neque laoreet suspendisse interdum consectetur libero. Etiam erat
+                        velit scelerisque in dictum non consectetur a. Amet facilisis
+                        magna etiam tempor orci. Ipsum nunc aliquet bibendum enim
+                        facilisis gravida neque convallis a.
+                      </p>
+                      <div class="actions flex flex-row justify-end space-x-6">
+                        <span class="material-icons-outlined"> star_border </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> open_in_new </span>
+                      </div>
+                    </div>
+          
+                    <div class="card flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                      <h5 class="card-title text-gray-900 text-xl leading-tight font-medium mb-2">Ad Blocker</h5>
+                      <p class="card-text text-gray-700 text-base mb-4">
+                        Turpis egestas integer eget aliquet nibh praesent tristique magna.
+                        Neque laoreet suspendisse interdum consectetur libero. Etiam erat
+                        velit scelerisque in dictum non consectetur a.
+                      </p>
+                      <div class="actions flex flex-row justify-end space-x-6">
+                        <span class="material-icons-outlined"> star_border </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> open_in_new </span>
+                      </div>
+                    </div>
+                    <div class="card flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                      <h5 class="card-title text-gray-900 text-xl leading-tight font-medium mb-2">Money Maker</h5>
+                      <p class="card-text text-gray-700 text-base mb-4">
+                        Ullamcorper morbi tincidunt ornare massa eget egestas purus. Dis
+                        parturient montes nascetur ridiculus. Euismod quis viverra nibh
+                        cras pulvinar mattis. Mattis rhoncus urna neque viverra justo nec.
+                        Morbi leo urna molestie at elementum eu. Tincidunt praesent semper
+                        feugiat nibh sed pulvinar.
+                      </p>
+                      <div class="actions flex flex-row justify-end space-x-6">
+                        <span class="material-icons-outlined"> star_border </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> open_in_new </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="container  col-start-7 col-span-2 flex flex-col w-64 p-4">
+                  <h3 class="text-black font-bold text-xl p-4">Announcements</h3>
+                  <div class="announcements flex flex-col justify-center block p-4 rounded-lg shadow-lg bg-white max-w-xs divide-solid">
+                    
+                    <ul class="card">
+                      <li class="announcement">
+                        <h5 class="card-title text-gray-900 text-base leading-tight font-medium mb-2">Site Maintenance</h5>
+                        <p class="card-text text-gray-700 text-sm mb-4">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+                          voluptatum ipsa cupiditate unde minima odio sunt fugit distinctio
+                          
+                        </p>
+                      </li>
+                      <li class="announcement">
+                        <h5 class="card-title text-gray-900 text-base leading-tight font-medium mb-2">Community Share Day</h5>
+                        <p class="card-text text-gray-700 text-sm mb-4">
+                          Vel rem, ipsa officia commodi veniam excepturi, ex, molestias
+                          perspiciatis consequuntur sint error voluptatem cum facilis?
+                        </p>
+                      </li>
+                      <li class="announcement">
+                        <h5 class="card-title text-gray-900 text-base leading-tight font-medium mb-2">Updated Privacy Policy</h5>
+                        <p class="card-text text-gray-700 text-sm mb-4">
+                          Accusamus nihil dicta, quisquam, similique doloremque unde quidem
+                          quaerat a possimus eum deleniti libero, dolore asperiores
+                          nulla!
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+        
+        
+                  <div class="trending col-start-7 col-span-2 flex flex-col justify-center w-64 p-4">
+                    <h3 class="text-black font-bold text-xl p-4">Trending</h3>
+                    <ul class="card flex flex-col justify-center block p-4 rounded-lg shadow-lg bg-white max-w-xs">
+                      <li class="trend trend-1">
+                        <div class="picture"></div>
+                        <div class="account">
+                          <p class="username">@tegan</p>
+                          <p class="name card-text">World Peace Builder</p>
+                        </div>
+                      </li>
+                      <li class="trend trend-2">
+                        <div class="picture"></div>
+                        <div class="account">
+                          <p class="username">@morgan</p>
+                          <p class="name card-text">Super Cool Project</p>
+                        </div>
+                      </li>
+                      <li class="trend trend-3">
+                        <div class="picture"></div>
+                        <div class="account">
+                          <p class="username">@kendall</p>
+                          <p class="name card-text">Life Changing App</p>
+                        </div>
+                      </li>
+                      <li class="trend trend-4">
+                        <div class="picture"></div>
+                        <div class="account">
+                          <p class="username">@alex</p>
+                          <p class="name card-text">No Traffic Maker</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+        
+                </div>
+          
+                
+          
+                
+        
+              </div>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
